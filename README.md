@@ -2,12 +2,11 @@
 
 **tiny_raspi**用于编译生成一个可以运行的最小内核.
 
-
 **编译**
 
-在本目录的上级目录运行
-
 ```
+git clone https://github.com/calinyara/tiny_raspi.git
+cd tiny_raspi
 git clone git://git.buildroot.net/buildroot
 mkdir build
 mkdir buildroot_dl

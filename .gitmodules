@@ -1,0 +1,3 @@
+[submodule "kernel-utils"]
+	path = kernel-utils
+	url = git@github.com:hacker-jie/kernel-utils.git
