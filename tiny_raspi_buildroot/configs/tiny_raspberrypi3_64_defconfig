@@ -44,5 +44,5 @@ BR2_TARGET_ROOTFS_CPIO_GZIP=y
 
 BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi3-64/post-build.sh"
 # BR2_ROOTFS_POST_BUILD_SCRIPT="$(BR2_EXTERNAL_TINY_RASPI_PATH)/board/raspberrypi3/post-build.sh"
-BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi3-64/post-image.sh"
+# BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi3-64/post-image.sh"
 # BR2_ROOTFS_POST_SCRIPT_ARGS="--add-pi3-miniuart-bt-overlay"
