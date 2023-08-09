@@ -3,7 +3,7 @@ name: Build Linux kernel for rpi3
 on: 
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
