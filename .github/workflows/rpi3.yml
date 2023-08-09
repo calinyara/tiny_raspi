@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-  star:
-    branches:
-      - main
+  watch:
+    types: [started]
 
 jobs:
 
