@@ -1,4 +1,4 @@
-name: Build Linux kernel for rpi3
+name: Build Linux kernel for rpi3 with miniuart
 
 on: 
   push:
