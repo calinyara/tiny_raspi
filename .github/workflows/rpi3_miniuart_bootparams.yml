@@ -1,0 +1,36 @@
+name: rpi3 with miniuart and bootparams
+
+on: 
+  push:
+    branches:
+      - main
+  watch:
+    types: [started]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies 
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential 
+    
+    - name: Build
+      run: |
+        git clone https://github.com/buildroot/buildroot.git
+        mkdir build
+        mkdir buildroot_dl
+        cd build
+        make BR2_EXTERNAL=../tiny_raspi_buildroot/ O=$PWD -C ../buildroot/ tiny_rpi3_64_bootparams_defconfig
+        make
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: build/images
